@@ -260,3 +260,8 @@ composer dump-autoload --optimize
 ```
 
 **`php artisan route:cache` is the key optimization, as it eliminates the runtime overhead of dynamic route registration, making this approach performant for production environments.**  By leveraging these optimizations, you can effectively use Object Routing to enhance the organization of your Laravel routes without sacrificing performance.
+
+## Commands
+* `php artisan make:route YOUR_CLASS_ROUTES_NAME`
+    * This command generates a new route class with the specified name. It creates the necessary boilerplate code for the route class, making it easier to follow the object routing approach. The generated class will be placed in the `app/Http/Routes` directory.
+    * Example of Usage: `php artisan make:route Some`
